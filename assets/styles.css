@@ -20,12 +20,13 @@ a:hover {
 nav {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100vw;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     justify-items: center;
 }
@@ -92,14 +93,68 @@ nav {
     left: 50px;
 }
 
+header {
+    margin-top: 76px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 80vh;
+    text-align: center;
+}
+
+#header__text_container {
+    margin: 3%;
+    justify-items: center;
+}
+
+#header__image {
+    height: auto;
+    width: 50%;
+}
+
+#header__listen_button {
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    padding: 10px 20px;
+}
+
 @media only screen and (max-width: 1024px) {
-    #nav__buttons {
-        visibility: hidden;
-        display: none
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #nav__buttons>* {
+        display: none;
     }
 
     #nav__menu {
         visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    header {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #header__image {
+        width: 100vw;
+        height: auto;
     }
 
 }

@@ -117,7 +117,7 @@ a.articles:hover {
     text-decoration: none !important;
 }
 
-#index_main{
+#index_main {
     display: grid;
     grid-template-columns: repeat(3, 0.3fr);
     justify-content: space-evenly;
@@ -133,7 +133,7 @@ a.articles:hover {
     text-align: center;
 }
 
-.image_article{
+.image_article {
     width: 200px;
     height: auto;
 }
@@ -142,6 +142,67 @@ a.articles:hover h2 {
     text-decoration: underline;
 }
 
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 14px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer__section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer__section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__section ul li {
+    margin-bottom: 5px;
+}
+
+.footer__section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer__bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.footer__icons {
+    margin-top: 10px;
+}
+
+.footer__icons a {
+    margin: 0 5px;
+    display: inline-block;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -165,9 +226,10 @@ a.articles:hover h2 {
         visibility: visible;
     }
 
-    #index_main{
+    #index_main {
         display: block;
     }
+
     .articles {
         display: grid;
         grid-template-columns: 70% 30%;

@@ -2,64 +2,136 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>The New Yorker</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div id="nav__menu">
+  <body>
+    <header id="index_header">
+      <div id="header_hover_navs_container">
+        <nav id="header__main_nav">
+
+          <div id="header_main_nav__menu">
             <a href="menu.html">
-                <img src="./assets/icons/menu.png" alt="menu_icon" class="icon">
+              <img src="./assets/icons/menu.png" alt="menu_icon" class="icon" />
             </a>
-        </div>
-        <img alt="The New Yorker" class="nav__title" src="./assets/images/The_New_Yorker_Logo.svg.png">
+          </div>
+          <img
+            alt="The New Yorker"
+            id="header_main_nav__title"
+            src="./assets/images/The_New_Yorker_Logo.svg.png"
+          />
 
-        <div id="nav__buttons">
+          <div id="header_main_nav__button_container">
             <span>
-                <a href="https://www.newyorker.com/newsletters?sourceCode=navbar" target="blank">Newsletter</a>
+              <a
+                href="https://www.newyorker.com/newsletters?sourceCode=navbar"
+                target="blank"
+                >Newsletter</a
+              >
             </span>
 
             <span>
-                <a href="https://www.newyorker.com/auth/initiate?redirectURL=%2F&source=VERSO_NAVIGATION"
-                    target="blank">Sign In</a>
+              <a
+                href="https://www.newyorker.com/auth/initiate?redirectURL=%2F&source=VERSO_NAVIGATION"
+                target="blank"
+                >Sign In</a
+              >
             </span>
 
-            <a href="https://www.newyorker.com/v2/offers/tny338?source=Site_0_JNY_NYR_DESKTOP_GLOBAL_NAV_CTA_0_INTL_PV0_TEST_JAN24_S_ZZ_PANELB_ADB&cds_mag_code=NYR&cds_page_id=280146&cds_response_key=94VGAANA1&redirectURL=https%3A%2F%2Fwww.newyorker.com%2F"
-                target="blank">
-                <button id="nav__subscribe_button">Subscribe</button>
+            <a
+              href="https://www.newyorker.com/v2/offers/tny338?source=Site_0_JNY_NYR_DESKTOP_GLOBAL_NAV_CTA_0_INTL_PV0_TEST_JAN24_S_ZZ_PANELB_ADB&cds_mag_code=NYR&cds_page_id=280146&cds_response_key=94VGAANA1&redirectURL=https%3A%2F%2Fwww.newyorker.com%2F"
+              target="blank"
+            >
+              <button id="header_main_nav__subscribe_button">Subscribe</button>
             </a>
             <span>
-                <a href="https://www.flaticon.com/free-icons/search">
-                    <img src="./assets/icons/search_icon.png" alt="search icon" class="icon">
-                </a>
+              <a href="https://www.flaticon.com/free-icons/search">
+                <img
+                  src="./assets/icons/search_icon.png"
+                  alt="search icon"
+                  class="icon"
+                />
+              </a>
             </span>
-        </div>
-    </nav>
+          </div>
+        </nav>
+        <nav id="header__hamburger_nav">
+          <a href="https://www.newyorker.com/latest">
+            <button class="header_hamburger_nav__button">The Latest</button>
+          </a>
+          <a href="https://www.newyorker.com/news">
+            <button class="header_hamburger_nav__button">News</button>
+          </a>
+          <a href="https://www.newyorker.com/culture">
+            <button class="header_hamburger_nav__button">Books & Culture</button>
+          </a>
+          <a href="https://www.newyorker.com/fiction-and-poetry">
+            <button class="header_hamburger_nav__button">Fiction & Poetry</button>
+          </a>
+          <a href="https://www.newyorker.com/humor">
+            <button class="header_hamburger_nav__button">Humor & Cartoons</button>
+          </a>
+          <a href="https://www.newyorker.com/magazine">
+            <button class="header_hamburger_nav__button">Magazine</button>
+          </a>
+          <a href="https://www.newyorker.com/crossword-puzzles-and-games">
+            <button class="header_hamburger_nav__button">Puzzles & Games</button>
+          </a>
+          <a href="https://www.newyorker.com/video">
+            <button class="header_hamburger_nav__button">Video</button>
+          </a>
+          <a href="https://www.newyorker.com/podcasts">
+            <button class="header_hamburger_nav__button">Podcasts</button>
+          </a>
+          <a href="https://www.newyorker.com/archive">
+            <button class="header_hamburger_nav__button">Archive</button>
+          </a>
+          <a href="https://www.newyorker.com/goings-on">
+            <button class="header_hamburger_nav__button">Goings On</button>
+          </a>
+        </nav>
+        <hr>
+      </div>
 
-    <a href="https://www.newyorker.com/magazine/2025/01/20/netanyahus-media-poison-machine">
-        <header>
-            <div id="header__text_container">
-                <h1>THE POISON MACHINE</h1>
+      <div>
+        <a
+          href="https://www.newyorker.com/magazine/2025/01/20/netanyahus-media-poison-machine"
+          id="header__top_news"
+        >
+          <div id="header__text_container">
+            <h1>THE POISON MACHINE</h1>
 
-                <p>Prime Minister Benjamin Netanyahu is on trial for corruption, and international criticism of Israel
-                    is mounting. But
-                    on Yinon Magal’s increasingly influential talk show, the problems are all the opposition’s fault.
-                    <strong>Ruth Margalit</strong> reports.
-                </p>
+            <p>
+              Prime Minister Benjamin Netanyahu is on trial for corruption, and
+              international criticism of Israel is mounting. But on Yinon
+              Magals increasingly influential talk show, the problems are all
+              the opposition&apos;s fault. <strong>Ruth Margalit</strong> reports.
+            </p>
 
-                <button id="header__listen_button">
-                    <img src="./assets/icons/headphones.png" alt="icon of headphones" class="icon">
-                    Listen
-                </button>
-            </div>
-            <img src="./assets\images\guy_talking_2_wall.jpg" alt="image of guy talking to wall" id="header__image">
-        </header>
-    </a>
-</body>
+            <button id="header__listen_button">
+              <img
+                src="./assets/icons/headphones.png"
+                alt="icon of headphones"
+                class="icon"
+              />
+              Listen
+            </button>
+          </div>
+          <img
+            src="assets/images/guy_talking_2_wall.jpg"
+            alt="Guy talking to a wall"
+            id="header__image"
+          />
+        </a>
+      </div>
+    </header>
 
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis ipsa officia repellendus et ipsam! Saepe repudiandae fuga nam odio, numquam dolor ipsa neque sint tempore, commodi laboriosam illum. Fugiat!</p>
+    </div>
+  </body>
 </html>

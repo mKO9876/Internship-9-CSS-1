@@ -12,48 +12,57 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
 .icon {
     height: 20px;
     width: auto;
 }
 
-nav {
-    position: absolute;
+#header_hover_navs_container{
+    position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
+}
+
+#header_hover_navs_container > hr{
+    margin: 0;
+}
+
+#header__main_nav {
+    display: grid;
+    grid-template-columns: 0.5fr auto 0.5fr;
+    align-items: center;
+    justify-items: center;
     width: 100vw;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: white;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-    align-items: center;
-    justify-items: center;
 }
 
-.nav__title {
+#header_main_nav__title {
     width: auto;
     height: 30px;
     justify-self: center;
 }
 
-#nav__buttons {
+#header_main_nav__button_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: medium;
+    font-size: small;
     justify-self: end;
-    margin-right: 20px
+    align-items: center;
 }
 
-#nav__buttons>* {
-    margin-left: 20px;
+#header_main_nav__button_container > *{
+    margin-right: 20px;
     align-self: center;
     font-weight: bold;
 }
 
 
-#nav__subscribe_button {
+#header_main_nav__subscribe_button {
     background-color: #0787ca;
     color: white;
     border: 0;
@@ -61,31 +70,36 @@ nav {
     padding: 10px 20px 10px 20px;
 }
 
-#nav__menu {
+#header_main_nav__menu {
     visibility: hidden;
     justify-self: start;
     margin-left: 20px
 }
 
+/* MENU.HTML */
 #menu__container {
     text-align: center;
     padding-top: 50px;
 }
 
-#menu__content_table {
-    margin-left: 30px;
-    text-align: left;
+.menu__button_container {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#menu__content_table td {
+.menu__content_table__buttons {
+    border: 0px;
+    margin: 0;
     font-size: 20px;
     line-height: 2.5;
     letter-spacing: 2px;
 }
 
-#menu__content_table td:hover {
+.menu__content_table__buttons a:hover {
     text-decoration: underline;
-    color: rgb(54, 54, 173);
+    color: rgb(75, 75, 218);
 }
 
 #menu__close_icon {
@@ -93,22 +107,40 @@ nav {
     left: 50px;
 }
 
-header {
-    margin-top: 76px;
+#menu__container hr{
+    margin: 0px;
+    border: 0.5px solid black;
+    width: 80vw;
+    margin: auto;
+}
+
+.menu__footer_buttons{
+    border: none;
+    font-weight: bold;
+}
+/* MENU.HTML */
+
+
+#index_header {
     background-color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    height: 80vh;
+    height: 100vh;
     text-align: center;
 }
 
+#index_header > a:hover{
+    text-decoration: none;
+}
+
 #header__text_container {
-    margin: 3%;
+    margin: 5%;
     justify-items: center;
+    color: white;
 }
 
 #header__image {
@@ -123,31 +155,60 @@ header {
     padding: 10px 20px;
 }
 
+#header__hamburger_nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 15px;
+    background-color: black;
+}
+
+.header_hamburger_nav__button{
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+#header__top_news{
+    display: flex;
+    margin-top: 114px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 @media only screen and (max-width: 1024px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    #header__top_news {
+        margin-top: 72px;
     }
 
-    #nav__buttons>* {
+    #index_header {
+        height: 90vh
+    }
+
+    #header_main_nav__button_container>* {
         display: none;
     }
 
-    #nav__menu {
+    #header__hamburger_nav{
+        display: none;
+    }
+
+    #header_main_nav__menu {
         visibility: visible;
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
     body {
         overflow-x: hidden;
         overflow-y: scroll;
     }
 
-    header {
+    #header__top_news {
         margin-top: 70px;
-        display: flex;
         flex-direction: column;
         height: auto;
     }
@@ -156,5 +217,15 @@ header {
         width: 100vw;
         height: auto;
     }
+
+    .menu__button_container {
+        margin-left: 20px;
+    }
+
+    #menu__container  hr{
+        margin: 20px;
+        width: auto;
+    }
+    
 
 }
